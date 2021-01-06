@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="Util.js"></script>
+    <script src="ListenEvent.js"></script>
+    <title>Game</title>
+    <link rel="icon" href="img/d_icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="c.css">
+</head>
+
+<body id="body_bg" class="cntbgcolor">
+    <div id="toTop">
+        <img id="toTopimg" src="img/up.png" alt="">
+    </div>
+    <div id="top">
+        <div class="mynav">
+            <ul class="ul">
+                <li>首頁</li>
+                <li>線上遊戲</li>
+                <li>PC GAME</li>
+                <li>PS4</li>
+                <li>NS</li>
+            </ul>
+        </div>
+        <div id="search">
+            <input type="text" placeholder="請輸入搜尋" name="" id="search_column">
+            <img src="img/sear.jpg" alt="">
+        </div>
+    </div>
+    <div id="content" class="cntbgcolor">
+        <div id="L_content" class="cntbgcolor">
+            <!--L content -->
+        </div>
+        <div id="R_content" class="cntbgcolor">
+            <!--R content -->
+        </div>
+    </div>
+    <!-- xmp區 -->
+    <xmp id="xmp_smallFrame" style="display: none;">
+        <table class="smallFrame">
+            <tr>
+                <td>
+                    <img id="*inx*" class="img_*imgsize*" src="img/*imgsrc*" alt="">
+                </td>
+                <td>
+                    <span>*platform*</span>&ensp;*name*
+                </td>
+            </tr>
+        </table>
+    </xmp>
+    <xmp id="xmp_linkTable" style="display: none;">
+        <table style="border: red solid 2px;" id="linkTable" class="news" style="width: 100%;">
+            <tr>
+                <td colspan="4">
+                    <p style="color:rgb(121, 98, 73);
+                    border-bottom:2px solid gray ;
+                    font-size:20px; "> 最新消息 </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="link/ps4.html"><img style="width: 100%;" src="img/ps4/1.jpg" alt=""></a></td>
+                <td>
+                    <a href="link/xb.html"><img style="width: 100%;" src="img/xb/xb1.jpg " alt=""></a></td>
+                <td>
+                    <a href="link/pirate.html"><img style="width: 100%;" src=" img/pirate/pirate1.jpg" alt=""></a>
+                </td>
+                <td>
+                    <a href="link/gta5.html"><img style="width: 100%;" src="img/gta5/gta5.jpg " alt=""></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="ps4" style="font-size: 15px;"><a href="link/ps4.html"><span style="color: grey;">《魔物獵人
+                                世界：Iceborne》將推出
+                                PS4 主機上蓋、控制器及穿戴式揚聲器等相關產品</span></a></p>
+                </td>
+                <td>
+                    <p style="font-size: 15px;"><a href="link/xb.html"><span style="color: grey;">《戰爭機器 5》將推出特別款式
+                                Xbox One X 主機同捆組 伴隨凱特揭露以血束縛的真相 </span></a></p>
+                </td>
+                <td>
+                    <p style="font-size: 15px;"><a href="link/pirate.html"><span
+                                style="color: grey;">由迪士尼正版授權，西山居遊戲推出的《神鬼奇航 榮耀之海 》（iOS / Android）日前於 ChinaJoy 2019
+                                中亮相。 </span></a></p>
+                </td>
+                <td>
+                    <p style="font-size: 15px;"><a href="link/gta5.html"><span style="color: grey;"> 《俠盜獵車手
+                                5》線上模式「鑽石賭場度假村」發放開幕參與者獎勵 </span></a></p>
+                </td>
+            </tr>
+        </table>
+        <br> 
+    </xmp>
+    <xmp  id="xmp_linkTable2" style="display: none;">
+        <div style="border-bottom:3px dotted gray ; padding-bottom: 30px;">
+            <table id="linkTable2">
+                <tr>
+                    <td>
+                        <a href="link/*fname*.html">
+                            <img style="height: 150px;width:150px;" src="img/*fname*/*imgName*.jpg" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <h5 style="color:rgb(255, 115, 0);">
+                            <a href="link/*fname*.html">*title*</a>
+                        </h5>
+                        <p style="color:rgb(115, 126, 126);">*content*</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+    </xmp>
+    <xmp  id="xmp_linkTable3" style="display: none;">
+        <div style="background-color: rgb(254, 255, 246);overflow: hidden;width:10px;height:30px;">
+            <a href=""><img style="display:none; " id="r" src=" " alt=""></a>
+        <div style="display:none; " class="tuku_up">
+            <a href=""><img class="smallScreen" src=" " alt=""></a>
+        </div>
+        <a href=""><img style="display:none; " id="l" src=" " alt=""></a>
+        <div style="display:none; " id="downini" class="tuku_down">
+            <a href=""><img class="star" src=" " alt=""></a>
+            <a href=""><img class="end" src=" " alt=""></a>
+        </div>
+        <a href=""><img style="display:none; " id="r" src=" " alt=""></a>
+    </xmp>
+    <!-- xmp區 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- <script src="jquery.js"></script>
+      <script src="bootstrap.min.js"></script>
+     -->
+    <script src="control.js"></script>
+    <script src="linkPage.js"></script>
+    <script src="url.js"></script>
+</body>
+
+</html>
