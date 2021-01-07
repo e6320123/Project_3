@@ -27,6 +27,8 @@
                 <li>PC GAME</li>
                 <li>PS4</li>
                 <li>NS</li>
+                <li><a href="/fin/index">Fin</a></li>
+                <li><a href="/fin/calc">index</a></li>
             </ul>
         </div>
         <div id="search">

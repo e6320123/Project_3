@@ -30,3 +30,6 @@ for (let i = 0; i < array.length; i++) {
 :O:pwd::14741474
 :O:pwd2::36963696
 :O:bj::bos@js138 
+    
+:O:com u::composer update
+:O:.b::.blade.php

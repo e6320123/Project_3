@@ -2,18 +2,22 @@
 
 
 @section('xmp_smallFrame')
-    @foreach ($gameAry as $gameInfo)   
+    @for ($i = 0; $i < count($gameAry); $i++)
+        
+    
+    {{-- @foreach ($gameAry as $gameInfo)    --}}
     <table class="smallFrame">
         <tr>
             <td>
-                <img id="{{$gameInfo->inx}}" class="img_{{$gameInfo->imgsize}}" src="img/{{$gameInfo->imgsrc}}" alt="">
+                <img id="{{$gameAry[$i]->inx}}" class="img_{{$gameAry[$i]->imgsize}}" src="img/{{$gameAry[$i]->imgsrc}}" alt="">
             </td>
             <td>
-                <span>{{$gameInfo->platform}}</span>&ensp;{{$gameInfo->name}}
+                <span>{{$gameAry[$i]->platform}}</span>&ensp;{{$gameAry[$i]->name}}
             </td>
         </tr>
     </table>   
-    @endforeach
+    {{-- @endforeach --}}
+    @endfor
  @endsection
  @section('xmp_linkTable')
  <table id="linkTable" class="news" style="width: 100%;">
