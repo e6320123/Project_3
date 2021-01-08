@@ -11,4 +11,6 @@ json檔存入資料庫
 
 
 
- 
+ http://jdev.tw/blog/734/autohotkey-introduction-chinese#header-5
+
+https://medium.com/@zehung860486/tool-notes-%E9%97%9C%E6%96%BC%E7%88%AC%E8%9F%B2-3bbf4e503fe6
