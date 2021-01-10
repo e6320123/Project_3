@@ -3,11 +3,17 @@
 Return 
 ^3:: 
    Run  http://10.1.0.14/
-   sleep 2000
+   sleep 2000 
+   send ^{tab}
+   sleep 100 
    send {tab}
+   sleep 100 
    send ben.liou
+   sleep 100 
    send {tab}
+   sleep 100 
    send 14741474ben
+   sleep 100 
    send {tab}
 Return 
 #n::Run notepad
