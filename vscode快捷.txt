@@ -1,0 +1,8 @@
+
+^+L
+^+ENTER
+shift+^+左右
+
+^+tab
+
+^+U
