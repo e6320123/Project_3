@@ -8,3 +8,5 @@ shift+^+左右
 ^+U
 
 ^+B
+
+shift+ home  end
