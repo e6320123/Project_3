@@ -89,11 +89,11 @@
             <td><button id="save_*">存入*txt*</button></td>
             <td><button id="load_*">載入*txt*</button><br></td>
         </tr>
-    </xmp>     
-    <script src="../../js/Util.js"></script>
-    <script src="../../js/ListenEvent.js"></script>
-    <script src="../../js/calc.js"></script> 
-    <script src="../../js/toast.js"></script> 
+    </xmp>      
+    <script src={{ URL::asset('js/Util.js') }}></script>
+    <script src={{ URL::asset('js/ListenEvent.js') }}></script>
+    <script src={{ URL::asset('js/calc.js') }}></script> 
+    <script src={{ URL::asset('js/toast.js') }}></script> 
     <!-- https://www.bootcss.com/p/buttons/ -->
 </body>
 </html>

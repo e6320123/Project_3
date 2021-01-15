@@ -10,3 +10,5 @@ shift+^+左右
 ^+B
 
 shift+ home  end
+
+^+F2

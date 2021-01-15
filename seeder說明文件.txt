@@ -18,3 +18,5 @@ Faker生成類型對照網站
 https://www.itread01.com/content/1548781334.html  
 [請益] PHP爬蟲寫法及Laravel Auth問題
 https://pttcareer.com/soft_job/M.1570598947.A.B20.html
+
+https://kknews.cc/zh-tw/code/344kpx3.html
