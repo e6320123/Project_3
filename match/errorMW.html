@@ -1,0 +1,122 @@
+(1/1) ServerException
+Server error: `POST https://www.go88game.com/as-manage/login.do` resulted in a `502 Bad Gateway` response:
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<center><h1>502 Bad Gateway</h1></center>
+(truncated...)
+
+in RequestException.php line 113
+at RequestException::create(object(Request), object(Response))
+in Middleware.php line 66
+at Middleware::GuzzleHttp\{closure}(object(Response))
+in Promise.php line 203
+at Promise::callHandler(1, object(Response), array(object(Promise), object(Closure), null))
+in Promise.php line 156
+at Promise::GuzzleHttp\Promise\{closure}()
+in TaskQueue.php line 47
+at TaskQueue->run(true)
+in Promise.php line 246
+at Promise->invokeWaitFn()
+in Promise.php line 223
+at Promise->waitIfPending()
+in Promise.php line 267
+at Promise->invokeWaitList()
+in Promise.php line 225
+at Promise->waitIfPending()
+in Promise.php line 62
+at Promise->wait()
+in Client.php line 131
+at Client->request('POST', 'https://www.go88game.com/as-manage/login.do', array('headers' => array('Accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3', 'Accept-Encoding' => 'gzip, deflate', 'Accept-Language' => 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7', 'Content-Type' => 'application/x-www-form-urlencoded', 'Host' => 'www.go88game.com', 'Origin' => 'https://www.go88game.com', 'Referer' => 'https://www.go88game.com/as-manage/', 'Upgrade-Insecure-Requests' => '1'), 'form_params' => array('userName' => 'BOS002', 'password' => '50b167561a1fcae17df1c0a9026b7fa9'), 'synchronous' => true))
+in mw.php line 111
+at mw->bodytool('https://www.go88game.com/as-manage/login.do', array('Accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3', 'Accept-Encoding' => 'gzip, deflate', 'Accept-Language' => 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7', 'Content-Type' => 'application/x-www-form-urlencoded', 'Host' => 'www.go88game.com', 'Origin' => 'https://www.go88game.com', 'Referer' => 'https://www.go88game.com/as-manage/', 'Upgrade-Insecure-Requests' => '1'), 'POST', object(CookieJar), array('userName' => 'BOS002', 'password' => '50b167561a1fcae17df1c0a9026b7fa9'))
+in mw.php line 33
+at mw->index('2021-01-19', '2021-01-19', null)
+in IndexController.php line 238
+at IndexController->result(object(Request))
+at call_user_func_array(array(object(IndexController), 'result'), array(object(Request)))
+in Controller.php line 55
+at Controller->callAction('result', array(object(Request)))
+in ControllerDispatcher.php line 44
+at ControllerDispatcher->dispatch(object(Route), object(IndexController), 'result')
+in Route.php line 203
+at Route->runController()
+in Route.php line 160
+at Route->run()
+in Router.php line 572
+at Router->Illuminate\Routing\{closure}(object(Request))
+in Pipeline.php line 30
+at Pipeline->Illuminate\Routing\{closure}(object(Request))
+in SubstituteBindings.php line 41
+at SubstituteBindings->handle(object(Request), object(Closure))
+in Pipeline.php line 148
+at Pipeline->Illuminate\Pipeline\{closure}(object(Request))
+in Pipeline.php line 53
+at Pipeline->Illuminate\Routing\{closure}(object(Request))
+in ShareErrorsFromSession.php line 49
+at ShareErrorsFromSession->handle(object(Request), object(Closure))
+in Pipeline.php line 148
+at Pipeline->Illuminate\Pipeline\{closure}(object(Request))
+in Pipeline.php line 53
+at Pipeline->Illuminate\Routing\{closure}(object(Request))
+in StartSession.php line 64
+at StartSession->handle(object(Request), object(Closure))
+in Pipeline.php line 148
+at Pipeline->Illuminate\Pipeline\{closure}(object(Request))
+in Pipeline.php line 53
+at Pipeline->Illuminate\Routing\{closure}(object(Request))
+in AddQueuedCookiesToResponse.php line 37
+at AddQueuedCookiesToResponse->handle(object(Request), object(Closure))
+in Pipeline.php line 148
+at Pipeline->Illuminate\Pipeline\{closure}(object(Request))
+in Pipeline.php line 53
+at Pipeline->Illuminate\Routing\{closure}(object(Request))
+in EncryptCookies.php line 59
+at EncryptCookies->handle(object(Request), object(Closure))
+in Pipeline.php line 148
+at Pipeline->Illuminate\Pipeline\{closure}(object(Request))
+in Pipeline.php line 53
+at Pipeline->Illuminate\Routing\{closure}(object(Request))
+in Pipeline.php line 102
+at Pipeline->then(object(Closure))
+in Router.php line 574
+at Router->runRouteWithinStack(object(Route), object(Request))
+in Router.php line 533
+at Router->dispatchToRoute(object(Request))
+in Router.php line 511
+at Router->dispatch(object(Request))
+in Kernel.php line 176
+at Kernel->Illuminate\Foundation\Http\{closure}(object(Request))
+in Pipeline.php line 30
+at Pipeline->Illuminate\Routing\{closure}(object(Request))
+in TransformsRequest.php line 30
+at TransformsRequest->handle(object(Request), object(Closure))
+in Pipeline.php line 148
+at Pipeline->Illuminate\Pipeline\{closure}(object(Request))
+in Pipeline.php line 53
+at Pipeline->Illuminate\Routing\{closure}(object(Request))
+in TransformsRequest.php line 30
+at TransformsRequest->handle(object(Request), object(Closure))
+in Pipeline.php line 148
+at Pipeline->Illuminate\Pipeline\{closure}(object(Request))
+in Pipeline.php line 53
+at Pipeline->Illuminate\Routing\{closure}(object(Request))
+in ValidatePostSize.php line 27
+at ValidatePostSize->handle(object(Request), object(Closure))
+in Pipeline.php line 148
+at Pipeline->Illuminate\Pipeline\{closure}(object(Request))
+in Pipeline.php line 53
+at Pipeline->Illuminate\Routing\{closure}(object(Request))
+in CheckForMaintenanceMode.php line 46
+at CheckForMaintenanceMode->handle(object(Request), object(Closure))
+in Pipeline.php line 148
+at Pipeline->Illuminate\Pipeline\{closure}(object(Request))
+in Pipeline.php line 53
+at Pipeline->Illuminate\Routing\{closure}(object(Request))
+in Pipeline.php line 102
+at Pipeline->then(object(Closure))
+in Kernel.php line 151
+at Kernel->sendRequestThroughRouter(object(Request))
+in Kernel.php line 116
+at Kernel->handle(object(Request))
+in index.php line 53

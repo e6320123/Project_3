@@ -1,0 +1,30 @@
+
+真人
+22  => php artisan wagers bblive2
+bblive
+22  => php artisan post bblive
+
+體育
+bbsport3
+bbsport
+bbsport
+
+電子
+22  => php artisan wagers bbslot3
+bbslot
+22  => php artisan post bbslot
+ 
+bbin新體育 
+22  => php artisan wagers bbnewsport2
+php posthero.php => bbnewsport
+22  => php artisan post bbnewsport
+---------------------------------------------------------------
+bg捕魚   
+php artisan wagers biggame_fish_query  
+php posthero.php => biggame
+php artisan post biggame_fish 
+
+
+php artisan wagers biggame_query  
+php posthero.php => biggame
+php artisan post biggame
