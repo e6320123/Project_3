@@ -1,0 +1,73 @@
+ag  bbin  xj   tc  sb
+---------------------------------------------------------------------------
+
+一般共線  xj
+
+---------------------------------------------------------------------------
+一般共線 imone
+robot27 ->  /var/www/html/laravel/app/Custom/Repositories/API
+imone2.php補單
+imone2.php -> 改日期 -> 前推5天
+參考 [共線.txt]流程
+27 -> putyy -> cd /var/www/html/laravel -> php artisan wagers imone2
+24 -> php posthero.php ->平台 imone
+27 -> putyy -> cd /var/www/html/laravel -> php artisan post imone
+---------------------------------------------------------------------------
+一般共線 bbin
+主機資料robot22
+dc 24補單
+robot22 post
+
+/var/www/html/laravel/app/Custom/Repositories/API/BBINmake.php
+
+bbin後台-> 帳號管理 => 帳號列表  模糊查詢 層級 代理商
+$agent 
+"dbet365" =>"150152981",
+<tr id="tr_150152981">
+
+報表/查詢 -> 報表 -> 层级查询 代理商 -> 游戏选择 遊戲群組3(真人)
+at/guzzle/看爬蟲檔的url
+
+bbin補單檔(對單.txt有)  改時間($date) 改爬的站台($agent_specified) (jss用jsh補)
+dc_24 -> 開puty -> cd /var/www/html/laravel -> php artisan BBIN -> 選擇 bbxbblive(XBB)
+dc_24 -> 移/home/ben.liou/ -> 開puty ->  php posthero.php -> bbslot(看posthero.php檔案)
+robot22 -> 開puty -> cd /var/www/html/laravel -> php artisan post bbslot 
+
+bb電子->BBINSlot4
+bb真人->BBINlive3
+bb真人(XBB)->BBINXBBLive
+
+jjt,qwe
+"dbgjjt" =>"244214098",
+"dbgqwe" =>"366709658",
+---------------------------------------------------------------------------
+很少補
+sb 共線
+主機在robot27
+96 = robot2
+看平台資料用新線bssb168 (帳號bscs)
+
+
+补15天前的单，先把sb_a的单补回去，在删掉重复单，在重新Post
+1. INSERT INTO `betslips_sb`
+SELECT * FROM `betslips_sb_a` WHERE orderdate BETWEEN '2019-08-12 00:00:00' AND '2019-08-12 23:59:59';
+2.删各站重复单(sqldata>delete)
+3.到96 UPDATE `CompanyWagerOffset` SET `offset2`= '34442037' WHERE com = 'Custom\\\Repositories\\\API\\\SBSport' ;
+
+如有漏单，直接跟厂商要那天的第一笔version key(起始点) 跟隔天的第一笔version key(结束点)
+1.去96 companyproductconfig表把comapny=---(365online)和company=bos(bossb) gamecom=sb_sport 
+    的version key记起来 并改成起始点(有两个客服群，两条线的version key都要改) ::(bos=>bssb)
+2.等version key跑到结束点就改回原本的直
+
+对单会有未结算注单的问题，排程目前是跑两天前的注单
+
+01/11  b96,hg9
+---------------------------------------------------------------------------
+ag
+每個遊戲平台都有categoryid 放在平台class檔案
+/home/bosuser/src/share_ftp
+agin真人 電子
+xin
+huter捕魚
+sbta 體育 
+補單要補到跑完不能中斷

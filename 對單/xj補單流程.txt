@@ -1,0 +1,19 @@
+xj 
+
+winscp - > robot27 
+xj下載的json檔丟到 var/www/html/laravel/public
+開putty -> cd 至 /var/www/html/laravel/
+php artisan post xj
+php artisan wagers xj3 -> /var/www/html/laravel/public/*.json 
+跑完對單頁面重整
+
+dc_24
+開putty
+php posthero.php
+複製對單頁面所有錯的站台 貼到 putyy 按enter -> 開始日期 打昨日2020-12-29 
+
+完成後回到robot27的putty  
+-> cd 至 /var/www/html/laravel/
+->run php artisan post xj
+
+有時最後沒刷rpt會錯

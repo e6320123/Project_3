@@ -1,0 +1,26 @@
+RD-16 (tc 天成)
+
+FTP傳回的檔放在
+/tmp/tcgaming/combine/TLOTTO/SETTLED  
+
+/var/www/html/laravel/app/Custom/Repositories/API
+Tcgaming3.php  抓ftp
+Tcgaming.php 解析跟送post
+
+
+FTP抓單用  RD-16
+補單用     robot27
+RD-16跟robot27有相同差不多的天成相關檔案
+
+去 robot27
+執行 php artisan wagers tcgaming 三次
+
+Tcgaming.php檔案裡
+改 date_count = 1  (1代表現在時間減1天)(86400秒)
+
+執行 php artisan wagers tcgaming 後不用post 會自己完成post
+
+每天wagers會分三階段時間跑解析
+robot27 -> /tmp刪重跑紀錄 20200102 -> 請權限擁有者刪除 -> php artisan wagers tcgaming  才會重新從第一階段開始跑
+
+如果只有幾站錯誤  可以一開始先跑post (共線post方式)

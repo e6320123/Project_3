@@ -1,0 +1,25 @@
+
+01/20
+@sbo電子 789,svip
+
+
+---------------共線------------------ 
+php artisan wagers sbo_egame_query
+php posthero.php  =>  sboegame  => svip
+php artisan post sbo_egame
+
+
+php rpt_ins.php 2021-01-19 sbo_egame
+
+
+
+svip	43.26	42.06	-1.2
+
+
+sbo電子  svip   補單+rpt 
+
+
+
+789	-59.7	-14.1	-45.6
+svip	43.26	42.06	-1.2
+svip	61.35	92.85	31.5

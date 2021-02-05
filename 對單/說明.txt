@@ -1,0 +1,74 @@
+/補單
+到10.10.1.27(robot27) laravel/routes/console.php 找補單
+到app Custom Repositories API 看控制時間
+php artisan wagers ''
+
+
+/post
+到robot->integration->找平台->where prefix and time (api/site/function _getWagerSum(時間)) 取第一筆logindex
+到robot96->integration->CompanyWagerOffset->where prefix 將logindex放入欲平台的offset2->post
+
+
+/各站補單 
+src/tools 找對應平台wager 補單
+src/robot/rpt_ins.php 時間 平台
+刷rpt_ins.php前先到src/include/category_setting 看對應名稱
+
+
+/AG需到AG後台手動對比 (跨日,改單)
+
+
+/XJ補單
+早上先到XJ後台申請當天單 中午後下載
+解壓縮丟到27 public
+在laravel運行->php artisan wagers xj3->檔案位置
+
+到24 php posthero.php -> 平台(xj) ->欲站台
+再回去27 php artisan post 平台(xj)
+
+
+bbinmake加新站 bbin後台->帳號管理->帳號列表->層級(代理商) 模糊查詢   code開f12 看tr id
+bbin補單 到10.10.1.24
+bbinmake找欲補站台.加到 預補遊戲->$agent_specified
+
+bb真人->BBINlive3
+bb真人(XBB)->BBINXBBLive
+bb體育->BBINSport4
+bb新體育->BBINNewsport3
+bb捕魚大師->BBINFishMaster2
+bb捕魚->BBINFish2
+bb電子->BBINSlot4
+
+bbin post 22
+
+
+----------------------------------------------------------------------
+IMONE  下午3點
+
+OGNEW 	下午2點
+
+機器對單的
+DS	EBET	AB	
+AG(GDC)	
+SB(不用抓log直接checkreport.php)(對前天的)(-0.0x可以算對)(-0.1x可以算對)
+
+
+飞机 - Sup / Mis / Cs 群
+下午3點 回客服  ognew(dfa) bb電子(vip) zh(b91) 
+
+
+PP   下午2.3點後再對
+
+AVIA: 
+下午1點後再對
+winscp -> bos101@10.1.0.12 -> /var/www/html/日期.log檔  
+看avia -> avia 2020-12-30 2020-12-30 ok (對單正確)
+
+飛機 sup  
+sg對單網頁點錯太多次會鎖
+SG平台帳號 BOSSUP 無法登入 請協助告知平台方  感謝
+請幫忙通知SG平台協助重置帳號 "BOSSUP"的密碼 目前無法登入 感謝
+sg平台後台登入 f12網頁檢查 -> network -> login.action
+
+
+omnitty 廣播

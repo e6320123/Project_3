@@ -1,0 +1,26 @@
+各平台商的class
+{prefix}/src/api/sites/
+平台.class.php檔案
+
+平台商--|--->api--->
+       |--->抓單--->process_wager
+       |--->rpt--->_getWagerSum
+
+對單
+{prefix}/src/robot/rpt_ins.php
+php rpt_ins.php 2020-12-30 bet365sb
+
+補單 測試
+{prefix}/src/tools/
+php {prefix}_wager.php $arg1 $arg2 -> $arg1是開始日期(2020-12-30)  $arg2是補單天數 不輸入預設1天
+先看{prefix}_wager.php檔案 argv[1]的參數
+補完刷rpt 網頁對單系統若正確則不用
+
+各站或共線看(沒加#號為各站)(不在上面的大都是共線)
+{prefix}/crontab.txt
+
+swg2_wager.php  用 skw2_wager.php, skw2_wager_30.php, skw2_wager_jp.php 補單
+ 
+補單後跑一次rpt(company name 要完整)
+ 
+{prefix}/src/api/api_setting 看sb查詢平台 Whitelabel

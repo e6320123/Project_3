@@ -1,0 +1,52 @@
+robot27  
+var/www/laravel/routes
+console.php
+Artisan::command('wagers裡
+kg2比kg多數字代表有設定固定一段時間抓單  非排程抓單
+
+post
+robot27->各站
+
+wagers
+robot27從各平台商抓單回來
+
+xj 
+一般共線gns
+一般共線ab
+
+共線
+平台商 --wagers-> robot27 --post-> 各站
+
+各站
+平台商->各站
+
+--------------------------------------------------------------------------------------------
+找漏單
+robot27 -> integration -> 找betslips_{平台}
+SELECT * FROM `betslips_allbet` where betNum="3476767008903432"(注單號)
+SELECT * FROM `betslips_imone` WHERE BetId="213856652";(注單號)
+找該筆資料的logindex複製  貼到下面的offset2
+--------------------------------------------------------------------------------------------
+卡post處理(post出去有漏掉)
+robot2->integration -> CompanyWagerOffset
+SELECT * FROM `CompanyWagerOffset` WHERE Prefix="678";
+找該筆資料為目標平台
+offset2=>開始index  offset=>結尾index
+
+robot2->integration -> CompanyWagerOffset -> 該平台betslips注單
+把掉單的logindex填到上面offset2(為保險 填入數字-1)
+重跑post
+
+若找不到掉單logindex  posthero.php會用當天第一筆注單的logindex填入 再重跑post
+
+--------------------------------------------------------------------------------------------
+wagers平台補單
+到robot27->var/www/html/laravel/app/Custom/Repositories/API 找平台php檔案
+##### 時間請在這設置，请输入美东时间 #####  下方設定補單時間
+console.php的wager裡查要補的平台php檔案  有數字為補單 沒數字是抓單
+以Genesis_query.php為例  robot27->開putty->cd /var/www/html/laravel 
+->下指令php artisan wagers genesis_query
+會有時間訊息與補單數量add wager:
+
+AG跑wagers補單不能中斷
+

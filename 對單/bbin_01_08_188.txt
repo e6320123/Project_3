@@ -1,0 +1,18 @@
+api 使用方法 : WagersRecordBy75
+
+array:[
+  "website" => "bgenter"
+  "uppername" => "dbg188"
+  "date" => "2021-01-08"
+  "starttime" => "00:00:00"
+  "endtime" => "23:59:59"
+  "action" => "BetTime"
+  "gametype" => "75001"
+  "page" => 1
+  "pagelimit" => "500"
+  "key" => {key}
+]
+
+
+
+{"result":true,"data":[{"UserName":"188a383931581","WagersID":"64340035","WagersDate":"2021-01-08 11:55:18","GameType":"75001","BetAmount":"40.0000","Payoff":"-40.0000","Currency":"RMB","ExchangeRate":"1.000000","Commissionable":"40.0000","Origin":"M","SerialID":"195093305","RoundNo":"17-35","Card":"D.13,C.3,C.10*S.12,D.7","ModifiedDate":"2021-01-08 11:57:49","Result":"L","ResultType":"3,7","WagerDetail":"1,1:0.95,40.00,-40.00","GameCode":"3300155"},{"UserName":"188a383931581","WagersID":"64340041","WagersDate":"2021-01-08 11:55:20","GameType":"75001","BetAmount":"20.0000","Payoff":"-20.0000","Currency":"RMB","ExchangeRate":"1.000000","Commissionable":"20.0000","Origin":"M","SerialID":"195093305","RoundNo":"17-35","Card":"D.13,C.3,C.10*S.12,D.7","ModifiedDate":"2021-01-08 11:57:49","Result":"L","ResultType":"3,7","WagerDetail":"1,1:0.95,20.00,-20.00","GameCode":"3300155"},{"UserName":"188a383931581","WagersID":"64340409","WagersDate":"2021-01-08 11:57:22","GameType":"75001","BetAmount":"220.0000","Payoff":"-220.0000","Currency":"RMB","ExchangeRate":"1.000000","Commissionable":"220.0000","Origin":"M","SerialID":"195093564","RoundNo":"17-33","Card":"S.8,D.2*S.2,D.7","ModifiedDate":"2021-01-08 11:59:44","Result":"L","ResultType":"0,9","WagerDetail":"1,1:0.95,200.00,-200.00*3,1:8,20.00,-20.00","GameCode":"330011"},{"UserName":"188a383931581","WagersID":"64340894","WagersDate":"2021-01-08 11:59:48","GameType":"75001","BetAmount":"60.0000","Payoff":"57.0000","Currency":"RMB","ExchangeRate":"1.000000","Commissionable":"60.0000","Origin":"M","SerialID":"195093873","RoundNo":"18-33","Card":"C.6,D.3*S.6,C.10","ModifiedDate":"2021-01-08 12:02:22","Result":"W","ResultType":"9,6","WagerDetail":"1,1:0.95,60.00,57.00","GameCode":"137"},{"UserName":"188a383931581","WagersID":"64341057","WagersDate":"2021-01-08 12:00:40","GameType":"75001","BetAmount":"60.0000","Payoff":"57.0000","Currency":"RMB","ExchangeRate":"1.000000","Commissionable":"60.0000","Origin":"M","SerialID":"195093965","RoundNo":"18-19","Card":"D.13,S.12,H.7*D.4,D.6,C.12","ModifiedDate":"2021-01-08 12:03:09","Result":"W","ResultType":"7,0","WagerDetail":"1,1:0.95,60.00,57.00","GameCode":"140"},{"UserName":"188a383931581","WagersID":"64341195","WagersDate":"2021-01-08 12:01:23","GameType":"75001","BetAmount":"120.0000","Payoff":"0.0000","Currency":"RMB","ExchangeRate":"1.000000","Commissionable":"0.0000","Origin":"M","SerialID":"195094053","RoundNo":"18-20","Card":"S.8,C.9*C.2,D.5","ModifiedDate":"2021-01-08 12:03:56","Result":"D","ResultType":"7,7","WagerDetail":"2,1:1,120.00,0.00","GameCode":"140"}],"pagination":{"Page":1,"PageLimit":500,"TotalNumber":"6","TotalPage":1}}"
