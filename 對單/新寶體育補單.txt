@@ -1,0 +1,17 @@
+XBB補單:
+1.到10.10.1.27資料庫integration找表betslips_xbbsport
+2. SELECT * FROM betslips_xbbsport where query_time BETWEEN "要補單的前一天 00:00:00" and 
+"要補單的前一天 23:59:59" order by query_time desc
+    (備註: 找尋的那一天必須確定沒有掉單)
+3. 找出第一筆注單的version_id 並貼到 /var/www/html/laravel/app/Custom/Repositories/API/XBBSport2.php 
+裡 __construct() 中的 $this->version_id
+4. 執行php artisan wagers xbbsport2
+5. 執行中，如果卡住導致程序結束，找到畫面上的最後一筆資料的"wager_id" 
+6. 到表betslips_xbbsport 執行
+   SELECT * FROM betslips_xbbsport where dw_id="找到的wager_id"
+7. 查看query_time 欄位是否已經超過 要補單的日期 (EX 要補15號的單 只要日期到16號就可以)
+8. 如果還沒 複製該注單的version_id 貼到 /var/www/html/laravel/app/Custom/Repositories/API/XBBSport2.php 
+裡 __construct() 中的 $this->version_id
+9. 重複4~8 直到達成7的條件
+10. POST 資料到各站
+11. 各站刷RPT
