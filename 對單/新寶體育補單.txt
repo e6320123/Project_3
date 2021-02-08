@@ -9,9 +9,18 @@ XBB補單:
 5. 執行中，如果卡住導致程序結束，找到畫面上的最後一筆資料的"wager_id" 
 6. 到表betslips_xbbsport 執行
    SELECT * FROM betslips_xbbsport where dw_id="找到的wager_id"
-7. 查看query_time 欄位是否已經超過 要補單的日期 (EX 要補15號的單 只要日期到16號就可以)
-8. 如果還沒 複製該注單的version_id 貼到 /var/www/html/laravel/app/Custom/Repositories/API/XBBSport2.php 
+7. 查看 query_time 欄位是否已經超過 要補單的日期 (EX 要補15號的單 只要日期到16號就可以)
+8. 如果還沒 複製該注單的 version_id 貼到 /var/www/html/laravel/app/Custom/Repositories/API/XBBSport2.php 
 裡 __construct() 中的 $this->version_id
 9. 重複4~8 直到達成7的條件
-10. POST 資料到各站
+10. POST 資料到各站 php artisan post xbbsport
 11. 各站刷RPT
+
+php posthero.php => xbbsport
+
+rpt => xbbsport
+
+1612688579
+SELECT query_time FROM betslips_xbbsport where dw_id="299378";
+SELECT version_id FROM betslips_xbbsport where dw_id="299378";
+299378

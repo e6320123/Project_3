@@ -1,0 +1,10 @@
+补15天前的单，先把sb_a的单补回去，在删掉重复单，在重新Post
+1. INSERT INTO `betslips_sb`
+SELECT * FROM `betslips_sb_a` WHERE orderdate BETWEEN '2019-08-12 00:00:00' AND '2019-08-12 23:59:59';
+2.删各站重复单(sqldata>delete)
+3.到96 UPDATE `CompanyWagerOffset` SET `offset2`= '34442037' 
+WHERE com = 'Custom\\\Repositories\\\API\\\SBSport' ;
+
+如有漏单，直接跟厂商要那天的第一笔version key(起始点) 跟隔天的第一笔version key(结束点)
+1.去96 companyproductconfig表把comapny=---(365online)和company=bos(bossb) gamecom=sb_sport 的version key记起来 并改成起始点(有两个客服群，两条线的version key都要改) ::(bos=>bssb)
+2.等version key跑到结束点就改回原本的直
